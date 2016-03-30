@@ -68,11 +68,13 @@ header h1 {
 }
 
 .portfolio {
+	width: 90%;
+	margin: 0 auto;
 	margin-top: 50px;
 }
 
 .portfolio img {
-	width: 90%;
+	width: 100%;
 }
 
 .portfolio h2 {
@@ -94,7 +96,7 @@ header h1 {
 
 .portfolio div p {
 	margin: 0 auto;
-	width: 83%;
+	width: 93%;
 	font-size: 1.07em;
 }
 
@@ -148,4 +150,64 @@ footer h2 {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+@media (min-width: 768px) {
+
+	header, footer, p, h1, h2, h3, img, ul, li {
+		border: 1px solid red;
+	}
+
+	header {
+		margin-bottom: 50px;
+	}
+
+	.navigation li {
+		width: 15%;
+		display: inline-block;
+	}	
+
+	.navigation {
+		text-align: center;
+	}
+
+	.personal-info {
+		width: 92%;
+		margin: 0 auto;
+	}
+
+	.about-me {
+		margin-top: 0;
+		width: 60%;
+		float: left;
+		padding-bottom: 0;
+		text-align: left;
+		font-size: 1.25em;
+	}
+
+	.profile-img {
+		width: 39%;
+		float: right;
+	}
+
+	.portfolio {
+		width: 92%;
+		margin: 0 auto;
+		border: 1px solid blue;
+	}
+
+	.portfolio div {
+		float: left;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	
+
+}
+
+@media (min-width: 1024px) {
+
+
+
 }
