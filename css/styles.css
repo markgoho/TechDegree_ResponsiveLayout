@@ -272,6 +272,10 @@ footer h2 {
 		margin-left: 20px;
 	}
 
+	.video {
+		margin: 0 auto;
+	}
+
 	
 
 }
@@ -327,6 +331,10 @@ footer h2 {
 		margin-right: auto;
 	}
 
+	.about-me {
+		font-size: 1.5em;
+	}
+
 	#portfolio {
 		width: 100%;
 		background-color: white;
@@ -349,5 +357,8 @@ footer h2 {
 		flex-basis: 23%;
 	}
 
+	.video {
+		margin: 0;
+	}
 
 }
