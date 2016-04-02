@@ -19,7 +19,7 @@ header {
 	margin: 0;
 }
 
-header h1 {
+.header-name {
 	text-align: center;
 	margin-top: 0;
 	padding: 30px 0;
@@ -27,11 +27,16 @@ header h1 {
 	font-weight: 800;
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
 .navigation {
 	margin-bottom: 28px;
 }
 
-.navigation li {
+.header-navigation li {
 	font-size: 1em;
 	background-color: white;
 	padding: 15px 0;
@@ -62,6 +67,11 @@ header h1 {
 	margin: 30px auto 0 auto;
 	padding-bottom: 42px;
 	font-size: 1.15em;
+}
+
+#portfolio-title {
+	padding-top: 50px;
+	text-align: center;
 }
 .portfolio, .about-me {
 	text-align: center;
@@ -154,21 +164,28 @@ footer h2 {
 
 @media (min-width: 768px) {
 
-	header, footer, p, h1, h2, h3, img, ul, li {
+	/* header, footer, p, h1, h2, h3, img, ul, li {
 		border: 1px solid red;
-	}
+	} */
 
 	header {
+		padding-bottom: 40px;
 		margin-bottom: 50px;
 	}
 
-	.navigation li {
+	.header-name {
+		padding-bottom: 5px;
+	}
+
+	.header-navigation li {
 		width: 15%;
 		display: inline-block;
+		background-color: #fafafa;
 	}	
 
-	.navigation {
+	.header-navigation {
 		text-align: center;
+		padding-bottom: 15px;
 	}
 
 	.personal-info {
@@ -190,24 +207,116 @@ footer h2 {
 		float: right;
 	}
 
-	.portfolio {
-		width: 92%;
-		margin: 0 auto;
-		border: 1px solid blue;
+	.portfolio-cards {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
-	.portfolio div {
-		float: left;
-		width: 50%;
+	.card {
+		flex-basis: 48%;
+	}
+
+	.small-footer-nav {
+		display: none;
+	}
+
+	.large-footer-nav {
+		width: 90%;
+		display: flex;
 		margin: 0 auto;
+		padding-bottom: 50px;
+		padding-top: 25px;
+		justify-content: space-between;
+		font-weight: 700;
+	}
+
+	.large-footer-nav li {
+		list-style: none;
+	}
+
+	.large-footer-name {
+		margin-right: auto;
+	}
+
+	.large-footer-nav li:nth-child(n+2) {
+		text-transform: uppercase;
+		margin-left: 20px;
 	}
 
 	
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
+	
+	/* * {
+		border: 1px solid red;
+	} */
 
+	a::hover {
+	color: #36acd0;
+	}
+	
+	a::visited {
+		color: black;
+	}
+
+	body {
+		margin: 0 auto;
+		max-width: 1024px;
+		background-color: #fafafa;
+	}
+
+	header {
+		padding-bottom: 0;
+	}
+
+	.top-info {
+		width: 92%;
+		margin: 40px auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	.header-navigation {
+		padding-bottom: 0;
+	}
+
+	.header-navigation li {
+		padding: 0;
+		margin: 0;
+		width: auto;
+	}
+
+	.header-navigation li:nth-child(n+2) {
+		margin-left: 20px;
+	}
+
+	.header-name {
+		padding-top: 0;
+		margin-right: auto;
+	}
+
+	.portfolio {
+		width: 100%;
+		background-color: white;
+	}
+
+	.portfolio-title {
+		padding-top: 25px;
+	}
+
+	.portfolio-cards {
+		margin: 0 auto;
+		width: 92%;
+	}
+
+	.card {
+		flex-basis: 32%;
+	}
 
 
 }
