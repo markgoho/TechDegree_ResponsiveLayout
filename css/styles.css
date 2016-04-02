@@ -69,45 +69,68 @@ a {
 	font-size: 1.15em;
 }
 
-#portfolio-title {
+.section-header {
 	padding-top: 50px;
 	text-align: center;
+	text-transform: uppercase;
 }
-.portfolio, .about-me {
+
+#portfolio, .about-me {
 	text-align: center;
 }
 
-.portfolio {
+#portfolio {
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 50px;
 }
 
-.portfolio img {
+#portfolio img {
 	width: 100%;
 }
 
-.portfolio h2 {
+#portfolio h2 {
 	text-transform: uppercase;
 	font-size: 1.35em;
 	padding-bottom: 50px;
 }
 
-.portfolio h3 {
+#portfolio h3 {
 	font-size: 1.5em;
 	padding-top: 30px;
 	padding-bottom: 15px;
 }
 
-.portfolio div {
+#portfolio div {
 	margin-bottom: 50px;
 	/* border: 1px solid red; */
 }
 
-.portfolio div p {
+#portfolio div p {
 	margin: 0 auto;
 	width: 93%;
 	font-size: 1.07em;
+}
+
+.skills-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 20px auto 0 auto;
+	justify-content: space-between;
+}
+
+.skills-list li {
+	border-radius: 7px;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 20px 5px;
+	background-color: #675a85;
+	list-style: none;
+	flex-basis: 48%;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 10px;
 }
 
 footer {
@@ -218,6 +241,10 @@ footer h2 {
 		flex-basis: 48%;
 	}
 
+	.skills-list li {
+		flex-basis: 32%;
+	}
+
 	.small-footer-nav {
 		display: none;
 	}
@@ -249,17 +276,17 @@ footer h2 {
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 	
 	/* * {
 		border: 1px solid red;
 	} */
 
-	a::hover {
+	a:hover {
 	color: #36acd0;
 	}
 	
-	a::visited {
+	a:visited {
 		color: black;
 	}
 
@@ -300,7 +327,7 @@ footer h2 {
 		margin-right: auto;
 	}
 
-	.portfolio {
+	#portfolio {
 		width: 100%;
 		background-color: white;
 	}
@@ -316,6 +343,10 @@ footer h2 {
 
 	.card {
 		flex-basis: 32%;
+	}
+
+	.skills-list li {
+		flex-basis: 23%;
 	}
 
 
