@@ -51,7 +51,7 @@ a {
 .profile-img {
 	margin: 0 auto;
 	width: 62.5%;
-	background-color: #ededed;
+	background-color: #2472aa;
 }
 
 .headshot {
@@ -110,6 +110,11 @@ a {
 	margin: 0 auto;
 	width: 93%;
 	font-size: 1.07em;
+}
+
+#skills {
+	background-color: #ededed;
+	padding-bottom: 50px;
 }
 
 .skills-list {
